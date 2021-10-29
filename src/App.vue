@@ -1,12 +1,19 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+  <div id="app ">
+    <px-header />
+    <div id="nav"></div>
     <router-view />
   </div>
 </template>
+
+<script>
+import PxHeader from "@/components/PxHeader.vue";
+export default {
+  components: {
+    PxHeader,
+  },
+};
+</script>
 
 <style>
 #app {
